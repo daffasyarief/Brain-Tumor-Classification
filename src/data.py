@@ -23,6 +23,7 @@ class TrainDataset(Dataset):
             for file in os.listdir(folder_path):
                 self.image.append(os.path.join(folder_path, file))
                 self.image_labels.append(label)
+
     def __len__(self):
         return len(self.image)
     
@@ -35,10 +36,17 @@ class TrainDataset(Dataset):
         return img, label
 
 class TestDataset(Dataset):
-    def __init__(self, transform=None):
+    def __init__(self, root, transform=None):
         self.transform = transform
-        self.image = 
-
+        self.image = []
+        self.image_labels = []
+        for subfolder in os.listdir(root):
+            label = label_mapping[subfolder]
+            folder_path = os.path.join(root, subfolder)
+            for file in os.listdir(folder_path):
+                self.image.append(os.path.join(folder_path, file))
+                self.image_labels.append(label)
+        
     def __len__(self):
             return len(self.image)
     
