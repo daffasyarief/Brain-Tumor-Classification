@@ -38,9 +38,6 @@ class HybridModel(nn.Module):
         f_conv = self.convnext(x)
         f_res = self.resnet(x)
 
-        print("ConvNeXt shape:", f_conv.shape)
-        print("ResNet50 shape:", f_res.shape)
-
         fused_features = torch.cat(
             [f_conv, f_res], dim=1
         )
