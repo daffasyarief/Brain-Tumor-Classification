@@ -238,7 +238,3 @@ Potential directions for future development include:
 
 This project is intended for educational and research purposes only. It is not designed to replace professional medical diagnosis, clinical assessment, or the judgment of qualified healthcare professionals.
 
-
----
-
-*Exploring hybrid deep learning architectures for medical image intelligence.*
