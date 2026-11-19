@@ -64,7 +64,8 @@ def training_loop(epoch, model, train_loader, val_loader):
 
         if val_loss < best_val_loss:
             best_val_loss = val_loss
-            torch.save(model.state_dict(), "best_model.pth")
-            print("Best model saved.")
+            model_name = model.__class__.__name__
+            torch.save(model.state_dict(), f"{model_name}.pth")
+            print("Model Saved")
 
     return model
