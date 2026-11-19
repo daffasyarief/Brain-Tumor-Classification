@@ -3,7 +3,7 @@
 **A Hybrid ConvNeXt–ResNet Architecture with Feature-Level Fusion for Brain MRI Classification**
 
 <p align="center">
-  <img src="assets/architecture.png" width="850" alt="Hybrid ConvNeXt ResNet Architecture"/>
+  <img src="Hybrid CNN Brain Tumor Classification Architecture.png" width="850" alt="Hybrid ConvNeXt ResNet Architecture"/>
 </p>
 
 ## Overview
