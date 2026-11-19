@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Model weights and checkpoints
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.h5
+*.safetensors
+
+# Virtual environment
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+logs/
+runs/
