@@ -5,17 +5,9 @@
 </p>
 
 ## Overview
-
-This project explores a hybrid deep learning approach for brain tumor classification using Magnetic Resonance Imaging (MRI) scans.
-
-The proposed architecture integrates two convolutional neural network backbones, **ConvNeXt** and **ResNet**, to extract complementary feature representations from medical images.
-
-A feature-level fusion strategy is employed to combine the extracted representations before passing them through a classification head to predict one of four categories: Glioma, Meningioma, Pituitary Tumor, and No Tumor.
-
-The primary objective is to investigate how combining different CNN architectures can improve feature representation and classification performance in medical image analysis.
+This project explores a hybrid deep learning approach for brain tumor classification using Magnetic Resonance Imaging (MRI) scans. The proposed architecture integrates two convolutional neural network backbones, **ConvNeXt** and **ResNet**, to extract complementary feature representations from medical images. A feature-level fusion strategy is employed to combine the extracted representations before passing them through a classification head to predict one of four categories: Glioma, Meningioma, Pituitary Tumor, and No Tumor. The primary objective is to investigate how combining different CNN architectures can improve feature representation and classification performance in medical image analysis.
 
 ## Key Features
-
 - Hybrid CNN architecture combining ConvNeXt and ResNet.
 - Feature-level fusion for complementary feature integration.
 - Transfer learning using pretrained architectures.
@@ -24,23 +16,15 @@ The primary objective is to investigate how combining different CNN architecture
 - Model evaluation using multiple classification metrics.
 
 ## Model Architecture
-
 The proposed hybrid model consists of three main components.
-
 ### 1. ConvNeXt Branch
-
 ConvNeXt is utilized as one of the feature extraction backbones to learn hierarchical visual representations from MRI images.
-
 ### 2. ResNet Branch
-
 ResNet provides complementary feature representations through residual connections, enabling effective deep feature extraction.
-
 ### 3. Feature-Level Fusion
-
 The extracted feature vectors from both backbones are concatenated and passed through a fully connected classification head.
 
 **Architecture Configuration:**
-
 | Component | Configuration |
 |---|---|
 | Backbone 1 | ConvNeXt Tiny |
@@ -55,7 +39,6 @@ The extracted feature vectors from both backbones are concatenated and passed th
 | Output Classes | 4 |
 
 ## Dataset
-
 The project uses a Brain MRI dataset containing four classification categories.
 
 | Class | Description |
@@ -66,7 +49,6 @@ The project uses a Brain MRI dataset containing four classification categories.
 | Pituitary | Pituitary tumor |
 
 ### Dataset Structure
-
 ```text
 data/
 ├── Training/
@@ -85,9 +67,7 @@ data/
 Dataset images are organized into training and testing directories according to their respective class labels.
 
 ## Methodology
-
 The overall experimental pipeline consists of the following stages:
-
 1. Data loading and exploratory data analysis.
 2. Image preprocessing and normalization.
 3. Data augmentation.
@@ -99,7 +79,6 @@ The overall experimental pipeline consists of the following stages:
 9. Model evaluation and performance analysis.
 
 ## Technology Stack
-
 | Category | Technology |
 |---|---|
 | Programming Language | Python |
@@ -113,7 +92,6 @@ The overall experimental pipeline consists of the following stages:
 | Evaluation | Scikit-learn |
 
 ## Project Structure
-
 ```text
 Brain-Tumor-Classification/
 │
